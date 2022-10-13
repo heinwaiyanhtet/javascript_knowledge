@@ -1,21 +1,80 @@
-const specialProperty = "nationality";
 
-const person = {
-    name : "John",
-    age : 22,
-    isAdmin : false,
-    [specialProperty]:"German",
-}
-console.log(person);
-//expect {name:"John",age:22,isAdmin:false,nationality:German},
+// const fruit = ["apple","bananas","kiwi"];
+// const [first,second,third] = fruit;
+// console.log(first);
+// console.log(second);
+// console.log(third);
 
-function makeObject(key,value) {
-    return {[key] : value};
-}
-const user = makeObject("username","John");
-const dog = makeObject("breed","Labrador");
-console.log(user);
-console.log(dog);
+// const person = {
+//     name:"John Doe",
+//     age:45
+// };
+
+// const {name:memberName,age:memberAge} = person;
+// console.log(memberName,memberAge);
+
+// function sum(a,b,...values) {
+//     let sum = a + b;
+//     values.forEach(value => sum += value);
+//     return sum;
+// }
+// console.log(sum(1,2,3,4,5,6))
+
+// function getDate() {
+//     const date = new Date();
+//     const formatDate = `${date.getFullYear()} - ${date.getMonth()-1} 
+//     - ${date.getDate()}`;
+//     const formattedTime = `${date.getHours()} : ${date.getMinutes()}`;
+//     return `${formatDate} ${formattedTime}`;
+// }
+
+// function logMessage(message,prefix = getDate()){
+//     console.log(`${prefix} - ${message}`);
+// }
+
+// logMessage("I like turtles");
+// logMessage("I like turtles","👑");
+
+// const translatedLanguages = [
+//     ...new Set(
+//         posts
+//             .filer(post=>post.author="John Doe" && post.view > 100)
+//             .map(post => post.langs)
+//             .reduce((acc,cur) => acc.concat(cur))
+//     )
+// ]
+// const specialProperty = "nationality";
+// const firstName = "John";
+// const lastName = "Doe";
+
+// const person = {
+//     firstName,
+//     lastName,
+//     getFullName(){
+//         return `${this.firstName} ${this.lastName}`;
+//     },
+//     [specialProperty]:"German"
+// }
+// console.log(person);
+
+// const specialProperty = "nationality";
+
+// const person = {
+//     name : "John",
+//     age : 22,
+//     isAdmin : false,
+//     [specialProperty]:"German",
+// }
+// console.log(person);
+// //expect {name:"John",age:22,isAdmin:false,nationality:German},
+
+// function makeObject(key,value) {
+//     return {[key] : value};
+// }
+// const user = makeObject("username","John");
+// const dog = makeObject("breed","Labrador");
+// console.log(user);
+// console.log(dog);
 
 
 // let args = []
